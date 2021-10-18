@@ -1,8 +1,10 @@
 <!doctype html>
+<!--у тебя используется несколько языков, а должен быть один-->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <!--тут ругается w3 validator на откление возможности масштабирования на телефонах-->
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,28 +19,39 @@
     <main>
       <div class="card mb-3 bg-light">
         <div class="card-body text-center d-flex justify-content-center align-items-center flex-column">
+          <!--тег не закрыт, тоже ругается w3 validator, не понимаю как можно было пропустить. Из-за этого браузер отрендерил инпут внутри тега h2-->
           <h2 class="mb-4">Выберите цвет<h2>
               <input type="color" value="#dc3545" />
         </div>
       </div>
 
+      <!--лишний пробел между классами-->
       <div class="container  mb-4">
+        <!--это обычный div, задание стилей должно происходить посредством классов-->
         <strong>Ахроматическое сочетание</strong>
+        <!--бесполезный класс text-start-->
         <p class="text-start">Ахроматические цвета прекрасно сочетаются,как со всеми цветами,так и между собой.</p>
+        <!--внутри этого блока каждому элементу надо было добавить какой-нибудь margin-bottom, при ресайзе выглядит неочень. Аналогично в других местах-->
         <div class="row row-cols-auto gx-5">
+          <!--из-за row-cols-auto класс col не сработал, его можно было не писать. В других местах аналогично-->
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
+            <!--лишние пробелы между классами-->
             <div class="p-3  bg-danger   border border-1 border-primary rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3  bg-dark border border-1 border-dark rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-white border border-1 border-dark rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3   bg-secondary border border-1 border-dark rounded" style="width: 70px;">
             </div>
           </div>
@@ -46,7 +59,9 @@
         </div>
       </div>
       <div class="container mb-4">
+        <!--это обычный div, задание стилей должно происходить посредством классов-->
         <strong>Комплиментарное сочетание</strong>
+        <!--бесполезный класс text-start-->
         <p class="text-start">Здесь используются контрастные цвета, которые в цветовом круге находятся напротив друг
           друга </p>
         <div class="row row-cols-auto gx-5">
@@ -61,18 +76,23 @@
         </div>
       </div>
       <div class="container  mb-4">
+        <!--это обычный div, задание стилей должно происходить посредством классов-->
         <strong>Триада</strong>
+        <!--бесполезный класс text-start-->
         <p class="text-start">Сочетания трех цветов,находящихся в цветовом круге на равном расстоянии </p>
         <div class="row  row-cols-auto gx-5">
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-danger border border-1 border-primary rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-primary border border-1 border-dark rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-warning border border-1 border-dark rounded" style="width: 70px;">
             </div>
           </div>
@@ -80,18 +100,24 @@
         </div>
       </div>
       <div class="container  mb-4">
+        <!--это обычный div, задание стилей должно происходить посредством классов-->
         <strong>Монохроматическое сочетание</strong>
+        <!--бесполезный класс text-start-->
         <p class="text-start">Разные оттенки одного цвета </p>
         <div class="row row-cols-auto gx-5">
           <div class="col ">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-danger border border-1 border-primary rounded" style="width: 70px;">
             </div>
           </div>
           <div class="col ">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-danger border border-1 border-dark rounded" style="--bs-bg-opacity: .75; width: 70px;">
             </div>
           </div>
+          <!--лишний пробел после класса-->
           <div class="col ">
+            <!--стили необходимо выносить, писать их в html не надо-->
             <div class="p-3 bg-danger border border-1 border-dark rounded" style="--bs-bg-opacity: .35; width: 70px;">
             </div>
           </div>
